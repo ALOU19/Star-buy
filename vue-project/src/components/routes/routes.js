@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-
+import CheckOut from "../vues/CheckOut.vue";
 import UnderNav from "../vues/UnderNav.vue";
 import Review from "../vues/Review.vue";
 import Footer from "../vues/Footer.vue";
@@ -11,6 +11,10 @@ import Post from "../vues/Post.vue";
 import AdminProducts from "../vues/AdminProducts.vue";
 import Home from "../vues/Home.vue";
 const routes = [
+  {path:"/CheckOut",
+  name:"CheckOut",
+  componenet:"CheckOut", 
+  },
   {
     path: "/UnderNav",
     name: "UnderNav",

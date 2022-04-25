@@ -17,14 +17,22 @@
       </div>
     </div>
     <button @click="displayPost" class="btn">Show All Cards</button>
+  <div>
+<CheckOut name="post.title" imgsrc="post.image" price="post.price"/>
+</div>
   </section>
+
 </template>
 
 <script>
 
 import axios from "axios";
+import CheckOut from "./CheckOut"
 export default {
   name: "Card",
+  component:{
+    CheckOut,
+  },
   data() {
     return {
       data: null,
